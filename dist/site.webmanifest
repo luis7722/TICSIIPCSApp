@@ -1,0 +1,11 @@
+{
+  "short_name": "TICSIIPCSApp",
+  "name": "TICSIIPCSApp",
+  "icons": [{
+    "src": "icon.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }],
+  "background_color": "#fafafa",
+  "theme_color": "#fafafa"
+}
