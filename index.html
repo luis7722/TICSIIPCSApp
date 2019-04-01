@@ -1,9 +1,7 @@
 <!doctype html>
-<html class="no-js" lang="">
-
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>TICSIIPCSApp</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,22 +9,34 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/Style.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
+<div class="col-12" style="padding-bottom: 4vh">
+  <div class="row" id="appname"></div>
+  <div class="row text-xs-center" id="topbar"></div>
+
+</div>
+
+<div class="container-fluid">
+  <div class="row" id="main">
+
+  </div>
+</div>
 <div id="data"></div>
 
-
 <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
 <script src="js/bootstrap.js"></script>
-
+<script src="js/sb-admin-2.min.js"></script>
+<script src="js/main.js"></script>
 
 <script>
-  $.get("https://ticsiipcs.com.mx/getheroes.php",function (e) {
-    $("#data").html(e)
-  })
+
 </script>
 
 

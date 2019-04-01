@@ -1,0 +1,47 @@
+.logo{
+    width: 20vh;
+}
+.container{
+    margin-top: 10px;
+}
+#topbar{
+    text-transform: uppercase;
+    background-color: #1c7430;
+    color: white;
+    box-shadow: 0 2px 4px 0px grey;
+    overflow-x:auto;
+    display: -webkit-box;
+}
+#topbar::-webkit-scrollbar {
+    display: none;
+}
+#topbar div{
+    padding-top: 4vh;
+    padding-bottom: 1.5vh;
+    width: 18vh;
+    max-width: initial;
+    text-align: center;
+}
+#topbar div.selected{
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+}
+#topbar div h6{
+    font-size: 2vh;
+}
+.card{
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+.border-left-primary{
+    border-left: .25rem solid #1c7430!important;
+}
+#appname{
+    background-color: #1c7430;
+    color: white;
+    padding-left: 2vh;
+    padding-top: 1vh;
+    margin-bottom: -1vh;
+}
