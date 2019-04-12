@@ -9,19 +9,19 @@ function start() {
     })
   }
   else{
-    $.get("main.html",function (e) {
-      $("#main").html(e);
+    $.get("./Views/Partial/AppName.html",function (e) {
+      $("#appname").html(e);
 
-      $.get("./Views/Partial/AppName.html",function (e) {
-        $("#appname").html(e);
-
-      });
-
+    }).done(function () {
       $.get("./Views/Partial/TopBar.html",function (e) {
         $("#topbar").html(e);
 
+      }).done(function () {
+        selectOption("calendarOption");
+
       });
-    })
+    });
+
   }
 }
 

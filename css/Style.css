@@ -45,3 +45,16 @@
     padding-top: 1vh;
     margin-bottom: -1vh;
 }
+.bookItem p{
+    height: 60px;
+    word-break: break-word;
+    width: 100%;
+    display: inline-block;
+    white-space: pre-line;
+    text-overflow: ellipsis;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.bookItem div{
+    padding-top: 20px;
+}
