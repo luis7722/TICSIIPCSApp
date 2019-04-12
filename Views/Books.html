@@ -1,23 +1,23 @@
 <!-- Earnings (Monthly) Card Example -->
-<div class="row" id="subjectsRow">
+<div class="row" id="booksRow">
 
 </div>
 <script>
-    function getSubjects() {
+    function getBooks() {
         var session= window.localStorage.getItem("session");
-        $.post("https://ticsiipcs.com.mx/api/index.php/getSubjects",{
+        $.post("https://ticsiipcs.com.mx/api/index.php/getBooks",{
             session: session
         },function (e) {
             var data = JSON.parse(e);
-            $("#subjectsRow").html("");
+            $("#booksRow").html("");
             $(data).each(function (a,b) {
-                $("#subjectsRow").append("<div class=\"col-xl-3 col-md-6 mb-4\">\n" +
+                $("#booksRow").append("<div class=\"col-xl-3 col-md-6 mb-4\">\n" +
                     "        <div class=\"card border-left-primary shadow h-100 py-2\">\n" +
                     "            <div class=\"card-body\">\n" +
                     "                <div class=\"row no-gutters align-items-center\">\n" +
                     "                    <div class=\"col mr-2\">\n" +
-                    "                        <div class=\"text-xs font-weight-bold text-primary text-uppercase mb-1\">"+b.teacher+"</div>\n" +
-                    "                        <div class=\"h5 mb-0 font-weight-bold text-gray-800\">"+b.name+"</div>\n" +
+                    "                        <div class=\"h5 mb-0 font-weight-bold text-primary text-uppercase mb-1\">Libro</div>\n" +
+                    "                        <div class=\"text-xs font-weight-bold text-gray-800\">fecha libro</div>\n" +
                     "                    </div>\n" +
                     "                    <div class=\"col-auto\">\n" +
                     "                        <i class=\"fas fa-calendar fa-2x text-gray-300\"></i>\n" +
@@ -29,5 +29,5 @@
             })
         })
     }
-    getSubjects();
+    getBooks();
 </script>
